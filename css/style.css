@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* 共通スタイル */
+body {
+  color: #333;
+  font-family: "Lato",sans-serif;
+}
+
+.topFont {
+  font-family: "Raleway",sans-serif;
+}
+
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.topFontSize {
+  font-size: 24px;
+}
+
+.bodyFontSize {
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #74cfae;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  color: #333;
+}
+
+.flexBoxCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 15px 0 15px 0;
+}
+
+.header-icon {
+  color: darkgray;
+  font-size: 60px;
+}
+
+.header-btn {
+  padding: 14px 12px;
+}
+
+/* Bolt Theme */
+.title {
+  background-color: #f2f2f2;
+}
+
+.title-inner {
+  padding: 250px 0;
+}
+
+.title-topTitle {
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.title-subTitle {
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+/*WHAT WE CAN DO?*/
+.overView {
+  background-color: #74cfae;
+}
+
+.overView-inner {
+  color: #fff;
+  padding-top: 50px;
+}
+
+.overView-textBox{
+  width: 700px;
+  margin-left: 100px;
+}
+
+.overView-textBox h3 {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+/*OUR LATEST WORK*/
+.arts {
+  background-color: #f2f2f2;
+}
+
+.arts-inner {
+  padding: 60px 0 70px 0;
+}
+
+.arts-title {
+  margin-bottom: 40px;
+}
+
+.arts-list {
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.arts-list li:not(:nth-child(3n + 1)) {
+  margin-left: 100px;
+}
+
+.arts-list li:nth-child(-n + 3) {
+  margin-bottom: 80px;
+}
+
+.arts-list li img {
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+.arts-list li img:hover{
+  opacity: 1;
+}
+
+.arts-textBox {
+  width: 580px;
+}
+
+.arts-btn {
+  padding: 14px 20px;
+}
+
+.arts-btnContainer {
+  margin-left: 90px;
+}
+
+/* OUR SKILLS */
+.skills {
+  background-color: #4e4e4e;
+}
+
+.skills-inner {
+  color: #fff;
+  padding: 70px 0 100px 0;
+}
+
+.skills-title {
+  margin-bottom: 70px;
+}
+
+.skills-list figure{
+  margin-left: 180px;
+}
+
+.skills-list figure:first-child {
+  margin-left: 0;
+}
+
+.skills-list figcaption {
+  margin-top: 16px;
+}
+
+/* SNSコンテンツ */
+.snsNav {
+  background-color: #f2f2f2;
+}
+
+.snsNav-inner {
+  padding: 200px 0;
+}
+
+.snsNav-inner ul li {
+  display: table;
+  width: 185px;
+  height: 100px;
+}
+
+.snsLink {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  transition-duration: 0.3s;
+}
+
+.snsLink:hover {
+  background-color: #fff;
+}
+
+.snsNav-icon {
+  color: #74cfae;
+  font-size: 60px;
+}
+
+
+/* .snsLink {
+  cursor: pointer;
+  display: inline-block;
+  height: 100px;
+  transition-duration: 0.3s;
+  width: 185px;
+}
+
+.snsLink:hover {
+  background-color: #fff;
+}
+
+.snsNav-icon {
+  color: #74cfae;
+  font-size: 60px;
+} */
+
+/* フッター */
+.footer {
+  background-color: #74cfae;
+}
+
+.footer-inner {
+  color: #fff;
+  padding: 20px 0 25px 0;
+}
+
+.footer-inner p {
+  font-size: 12px;
+  text-align: right;
+}
