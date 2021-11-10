@@ -51,6 +51,10 @@ a {
   color: #333;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .flexBoxCenter {
   display: flex;
   justify-content: center;
@@ -206,17 +210,11 @@ a {
   padding: 200px 0;
 }
 
-.snsNav-inner ul li {
-  display: table;
-  width: 185px;
-  height: 100px;
-}
-
 .snsLink {
-  display: table-cell;
+  display: inline-block;
+  padding: 20px 0;
   text-align: center;
-  vertical-align: middle;
-  transition: background-color 0.3s;
+  width: 185px;
 }
 
 .snsLink:hover {
@@ -243,15 +241,12 @@ a {
   text-align: right;
 }
 
-/* タブレット、SP共通 */
-@media screen and (max-width:1199px) {
+/* タブレットcss */
+@media screen and (max-width:1199px){
   .inner{
     width: 97%;
   }
-}
 
-/* タブレットcss */
-@media screen and (min-width:768px) and (max-width:1199px){
   /*WHAT WE CAN DO?*/
   .overView-inner {
     padding: 50px 0 25px 0;
@@ -264,44 +259,125 @@ a {
   }
   
   /*OUR LATEST WORK*/
-  .arts {
-    background-color: #f2f2f2;
-  }
-
   .arts-inner {
     padding: 60px 0 70px 0;
   }
 
-  .arts-title {
-    margin-bottom: 40px;
-  }
-
   .arts-list {
-    flex-wrap: wrap;
-  }
-
-  .arts-list li {
-    font-size: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 
   .arts-list li:not(:nth-child(3n + 1)) {
-    margin-left: 100px;
+    margin-left: 0px;
   }
 
   .arts-list li:nth-child(n + 4) {
+    margin-top: 0px;
+  }
+
+  .arts-list li:nth-child(3n + 4) {
     margin-top: 80px;
   }
 
   .arts-text-flexbox {
-    margin-top: 0px;
     display: block;
+    margin-top: 80px;
   }
 
   .arts-textBox {
+    margin: 0 auto;
     width: 90%;
   }
 
   .arts-btn {
     margin-left: 0px;
+    margin-top: 40px;
   }
-} */
+
+  /* OUR SKILLS */
+  .skills-inner {
+    color: #fff;
+    padding: 70px 0 100px 0;
+  }
+
+  .skills-list ul {
+    flex-direction: column;
+  }
+
+  .skills-list ul li {
+    margin-left: 0px;
+    margin-top: 88px;
+  }
+
+  .skills-list ul li:first-child {
+    margin-top: 0;
+  }
+
+  .skills-list figcaption {
+    margin-top: 8px;
+  }
+}
+
+/* SPcss */
+@media screen and (max-width:767px){
+  /* ヘッダー */
+  .header-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+      display: block;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #fff;
+      box-sizing: border-box;
+  }
+
+  .hamburger-menu span,
+  .hamburger-menu span:before,
+  .hamburger-menu span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 30px;
+      border-radius: 4px;
+      background-color: #ddd;
+      position: relative;
+  }
+  .hamburger-menu span:before {
+    position: absolute;
+    bottom: 8px;
+  }
+  .hamburger-menu span:after {
+    position: absolute;
+    top: 8px;
+  }
+
+  /* Bolt Theme */
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+
+  .title-topTitle {
+    font-size: 80px;
+  }
+
+  /* SNSコンテンツ */
+  .snsNav-inner {
+    box-sizing: border-box;
+    padding: 50px 15px;
+  }
+
+  .snsNav-inner ul {
+    flex-direction: column;
+  }
+
+  .snsLink {
+    display: inline-block;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
