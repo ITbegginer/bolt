@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 a {
@@ -74,8 +74,7 @@ a {
 }
 
 .header-icon {
-  color: darkgray;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .header-btn {
@@ -132,12 +131,9 @@ a {
   padding: 60px 0 70px 0;
 }
 
-.arts-title {
-  margin-bottom: 40px;
-}
-
 .arts-list {
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .arts-list li {
@@ -232,24 +228,6 @@ a {
   font-size: 40px;
 }
 
-
-/* .snsLink {
-  cursor: pointer;
-  display: inline-block;
-  height: 100px;
-  transition-duration: 0.3s;
-  width: 185px;
-}
-
-.snsLink:hover {
-  background-color: #fff;
-}
-
-.snsNav-icon {
-  color: #74cfae;
-  font-size: 60px;
-} */
-
 /* フッター */
 .footer {
   background-color: #74cfae;
@@ -264,3 +242,66 @@ a {
   font-size: 12px;
   text-align: right;
 }
+
+/* タブレット、SP共通 */
+@media screen and (max-width:1199px) {
+  .inner{
+    width: 97%;
+  }
+}
+
+/* タブレットcss */
+@media screen and (min-width:768px) and (max-width:1199px){
+  /*WHAT WE CAN DO?*/
+  .overView-inner {
+    padding: 50px 0 25px 0;
+    display: block;
+  }
+  
+  .overView-textBox{
+    width: 80%;
+    margin: 20px auto 0 auto;
+  }
+  
+  /*OUR LATEST WORK*/
+  .arts {
+    background-color: #f2f2f2;
+  }
+
+  .arts-inner {
+    padding: 60px 0 70px 0;
+  }
+
+  .arts-title {
+    margin-bottom: 40px;
+  }
+
+  .arts-list {
+    flex-wrap: wrap;
+  }
+
+  .arts-list li {
+    font-size: 0;
+  }
+
+  .arts-list li:not(:nth-child(3n + 1)) {
+    margin-left: 100px;
+  }
+
+  .arts-list li:nth-child(n + 4) {
+    margin-top: 80px;
+  }
+
+  .arts-text-flexbox {
+    margin-top: 0px;
+    display: block;
+  }
+
+  .arts-textBox {
+    width: 90%;
+  }
+
+  .arts-btn {
+    margin-left: 0px;
+  }
+} */
